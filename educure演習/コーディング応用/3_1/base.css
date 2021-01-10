@@ -38,6 +38,28 @@ body {
 }
 
 /* 上の部分は気にせずここから書く */
-.image {
+#wrapper {
 	margin: 0 auto;
+	width: 1200px;
 }
+#box1,
+#box2 {
+	width: 600px;
+	height: 200px;
+	float: left;
+}
+#box1 {
+	background-color: red;
+}
+#box2 {
+	background-color: blue;
+}
+@media screen and (max-width: 1000px) {
+	#box1,
+	#box2 {
+		width: 100%;
+	}
+}
+
+
+

@@ -1,0 +1,184 @@
+@charset "UTF-8";
+/* reset */
+body, h1, h2, h3, h4, h5, h6, p, address,
+ul, ol, li, dl, dt, dd, img, form, table, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: none;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 100%;
+	text-align: left;
+	list-style-type: none;
+	border-collapse: collapse;
+}
+
+textarea { font-size: 100%; vertical-align:middle;}
+img { border-style: none; display: block; }
+hr { display: none; }
+em{font-style: normal}
+input{line-height:auto;vertical-align:middle;}
+strong.more{color:#c30}
+a{text-decoration: none;}
+
+html {
+
+}
+
+body {
+	font-family:Futura,"游ゴシック体",YuGothic,"游ゴシック",'Yu Gothic Medium','Yu Gothic','ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック', sans-serif;
+}
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/* 上の部分は気にせずここから書く */
+
+/*共通部分*/
+.clearfix::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+.container {
+	width: 920px;
+	margin: 0 auto;
+	padding: 50px 0;
+}
+.contents_title {
+	font-size: 25px;
+	text-align: center;
+	margin-bottom: 5px;
+	color: #237abd;
+}
+.contents_title_bg {
+	margin: 0 auto;
+}
+.content_box {
+	width: 33%;
+	float: left;
+	margin-bottom: 30px;
+}
+.content_box:nth-child(4) {
+	clear: both;
+}
+.content_box p,
+.recruit_box p {
+	text-align: center;
+	font-size: 13px;
+	margin-top: 10px;
+}
+.content_wrapper {
+	margin-top: 30px;
+}
+.content_box_img {
+	margin: 0 auto;
+}
+
+
+/*header部分*/
+.header_container {
+	width: 1140px;
+	margin: 0 auto;
+	color: #fff;
+}
+.header_contact_message {
+	padding: 15px 0;
+	text-align: right;
+	display: block;
+	width: 100%;
+}
+.header_bar {
+	float: right;
+}
+.header_logo {
+	position: relative;
+	float: left;
+	background-color: #fff;
+	padding: 5px;
+	bottom: 10px;
+}
+.list_contents {
+	float: left;
+}
+.list_contents:last-child {
+	position: relative;
+	bottom: 13px;
+}
+.list_space {
+	margin: 0 20px;
+}
+.list_logo {
+	display: inline-block;
+}
+.tel_number {
+	font-size: 30px;
+}
+.main_image {
+	background-image: url("images/index/bg.png");
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	height: 1000px;
+}
+.main_text_image {
+	margin: 80px auto 80px auto;
+}
+.more_message {
+	color: #fff;
+	text-align: center;
+}
+
+/*メインコンテンツ部分*/
+.main_content {
+	background-color: #f8f8f8;
+}
+.main_content_text_img {
+	margin: 0 auto 70px auto;
+}
+
+/*serviceコンテンツ部分*/
+.service_content_text {
+	color: #237abd;
+}
+.service_bg {
+	box-shadow: 5px 5px 0px 0 #237abd;
+}
+
+/*recruitコンテンツ部分*/
+.recruit {
+	background-color: #f8f8f8;
+}
+.recruit_box {
+	width: 50%;
+	float: left;
+	padding: 70px;
+	background-position: center;
+	background-size: cover;
+	color: #fff;
+}
+.recruit_box:first-child {
+	background-image: url("images/index/recruit.png");
+}
+.recruit_box:last-child {
+	background-image: url("images/index/company.png");
+}
+
+/*footer部分*/
+.footer_text {
+	text-align: center;
+	font-size: 13px;
+}
+.footer_text:first-child {
+	margin-bottom: 30px;
+}
+
+
+
+
+
