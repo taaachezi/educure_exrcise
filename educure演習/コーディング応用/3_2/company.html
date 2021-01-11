@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="株式会社サングーのオフィシャルサイトです。マンション管理運営、ビル・施設マネジメント、公共施設管理運営などをトータルサポートいたします。">
+  <meta name="keywords" content="ビル管理会社,マンション管理,運営,施設マネジメント,公共施設管理,総合不動産管理会社,清掃業務,保安警備業務,株式会社サングーSANGU">
+  <title>会社概要｜株式会社サングーSANGUマンション管理やビル管理、公共施設運営などをトータルサポート</title>
+  <link rel="stylesheet" type="text/css" href="base.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+   <script>
+  	$(function(){
+  		// カレント表示　パスとlist_contentsクラスのidが一致したらcssを付与する
+  		var path = location.pathname.split("/");
+  		var currentUrl = path[path.length-1].split(".")[0];
+  		var listId = []
+  		listId.push("privacy_policy");
+  		$(".list_contents").each(function(){
+  			listId.push($(this).attr("id"));
+  		});
+  		$(listId).each(function(){
+  			if(this　== currentUrl) {
+  				var result = this;
+  				$("#" + result).css("color", "#237abd");
+  				$(".list_space").css("color", "#000");
+  			};
+  		});
+
+  		// ページ遷移
+  		$("#header_log").on("click", function(){
+  			location.href = "index.html";
+  		})
+  		$("#company").on("click", function(){
+  			location.href = "company.html";
+  		});
+  		$("#service").on("click", function(){
+  			location.href = "service.html";
+  		});
+  		$("#recruit").on("click", function(){
+  			location.href = "recruit.html";
+  		});
+  		$("#privacy_policy").on("click", function(){
+  			location.href = "privacy_policy.html";
+  		});
+  		$("li, #privacy_policy").on("mouseover", function(){
+  			$(this).css("cursor", "pointer");
+  		});
+  	});
+  </script>
+</head>
+
+
+<body>
+	<header class="company_header_container clearfix">
+		<span class="header_contact_message clearfix">お電話でのお問い合わせはこちら</span>
+		<nav>
+			<ul class="header_logo">
+				<li class="list_logo" id="header_log"><img src="images/base/logo.png"></li>
+			</ul>
+			<ul class="header_bar">
+				<li class="list_contents" id="company"><span class="list_space">|</span>会社概要<span class="list_space">|</span></li>
+				<li class="list_contents" id="service">事業紹介<span class="list_space">|</span></li>
+				<li class="list_contents" id="recruit">採用情報<span class="list_space">|</span></li>
+				<li class="list_contents">TEL<span class="tel_number">03-3493-1551</span></li>
+			</ul>
+		</nav>
+	</header>
+
+	<div class="company">
+		<div class="container">
+			<h2 class="contents_title">COMPANY</h2>
+			<img src="images/base/index_bg.png" class="contents_title_bg">
+		</div>
+		<div class="container">
+			<table class="company_table">
+				<tbody>
+					<tr>
+						<td>社名</td>
+						<td>株式会社　サングー</td>
+					</tr>
+					<tr>
+						<td>会社設立</td>
+						<td>昭和56年6月1日</td>
+					</tr>
+					<tr>
+						<td>東京本社</td>
+						<td>
+							〒141-0031 <br>
+							東京都品川区西五反田1丁目29番2号（吾作ビル6F）<br>
+							TEL.03-3493-1551 <br>
+							FAX.03-3493-1555
+						</td>
+					</tr>
+					<tr>
+						<td>資本金</td>
+						<td>12,000万円</td>
+					</tr>
+					<tr>
+						<td>役員</td>
+						<td>
+							代表取締役社長　三宮　康司 <br>
+							取締役副社長　　三宮　暢洋
+						</td>
+					</tr>
+					<tr>
+						<td>営業品目</td>
+						<td>
+							建築物の総合管理業務　<br>
+							1.冷暖房・給排水・換気・空調及び電気設備に関する計画施工保全管理業務 <br>
+							2.清掃業務 <br>
+							3.建築物環境衛生管理業務 <br>
+							4.電気工事・点検業務 <br>
+							5.消防設備点検業務 <br>
+							6.植栽の剪定・保守・リース業務 <br>
+							7.リフォーム業務 <br>
+							8.サービス業務
+						</td>
+					</tr>
+					<tr>
+						<td>取引銀行</td>
+						<td>
+							三菱東京ＵＦＪ銀行　　五反田支店 <br>
+							三井住友銀行　　　　　五反田支店 <br>
+							りそな銀行　　　　　　五反田支店 <br>
+							みずほ銀行　　　　　　五反田支店
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+
+	<footer class="container footer_border">
+		<p class="footer_text" id="privacy_policy">プライバシーポリシー</p>
+		<p class="footer_text">Copyright©SANGU inc. ALL Rights Reserved.</p>
+	</footer>
+
+</body>
+</html>

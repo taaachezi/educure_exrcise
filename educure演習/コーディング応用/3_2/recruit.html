@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="株式会社サングーのオフィシャルサイトです。マンション管理運営、ビル・施設マネジメント、公共施設管理運営などをトータルサポートいたします。">
+  <meta name="keywords" content="ビル管理会社,マンション管理,運営,施設マネジメント,公共施設管理,総合不動産管理会社,清掃業務,保安警備業務,株式会社サングーSANGU">
+  <title>会社概要｜株式会社サングーSANGUマンション管理やビル管理、公共施設運営などをトータルサポート</title>
+  <link rel="stylesheet" type="text/css" href="base.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+   <script>
+  	$(function(){
+  		// カレント表示　パスとlist_contentsクラスのidが一致したらcssを付与する
+  		var path = location.pathname.split("/");
+  		var currentUrl = path[path.length-1].split(".")[0];
+  		var listId = []
+  		listId.push("privacy_policy");
+  		$(".list_contents").each(function(){
+  			listId.push($(this).attr("id"));
+  		});
+  		$(listId).each(function(){
+  			if(this　== currentUrl) {
+  				var result = this;
+  				$("#" + result).css("color", "#237abd");
+          $(".list_space").css("color", "#000");
+  			};
+  		});
+
+  		// ページ遷移
+  		$("#header_log").on("click", function(){
+  			location.href = "index.html";
+  		})
+  		$("#company, #company_logo").on("click", function(){
+  			location.href = "company.html";
+  		});
+  		$("#service").on("click", function(){
+  			location.href = "service.html";
+  		});
+  		$("#recruit, #recruit_logo").on("click", function(){
+  			location.href = "recruit.html";
+  		});
+  		$("#privacy_policy").on("click", function(){
+  			location.href = "privacy_policy.html";
+  		});
+  		$("li, #privacy_policy").on("mouseover", function(){
+  			$(this).css("cursor", "pointer");
+  		});
+  	});
+  </script>
+</head>
+
+<body>
+	<header class="company_header_container clearfix">
+		<span class="header_contact_message clearfix">お電話でのお問い合わせはこちら</span>
+		<nav>
+			<ul class="header_logo">
+				<li class="list_logo" id="header_log"><img src="images/base/logo.png"></li>
+			</ul>
+			<ul class="header_bar">
+				<li class="list_contents" id="company"><span class="list_space">|</span>会社概要<span class="list_space">|</span></li>
+				<li class="list_contents" id="service">事業紹介<span class="list_space">|</span></li>
+				<li class="list_contents" id="recruit">採用情報<span class="list_space">|</span></li>
+				<li class="list_contents">TEL<span class="tel_number">03-3493-1551</span></li>
+			</ul>
+		</nav>
+	</header>
+
+  <div class="recruit recruit_show">
+    <div class="container">
+      <h2 class="contents_title">RECRUIT</h2>
+      <img src="images/base/index_bg.png" class="contents_title_bg">
+    </div>
+    <div class="container">
+      <img src="images/recruit/recruit_text.png" class="content_box_img">
+    </div>
+    <div class="container">
+      <h2 class="recruit_title">採用ステップ</h2>
+      <img src="images/recruit/step.png" class="content_box_img">
+    </div>
+    <div class="container">
+      <h2 class="recruit_title">募集要項</h2>
+      <table class="recruit_table">
+        <tbody>
+          <tr>
+            <td>求める人材</td>
+            <td>2017年3月卒業見込みの建築・設備・電気・機械系学科を選考の方</td>
+          </tr>
+          <tr>
+            <td>仕事内容</td>
+            <td>
+              ◆建物の改修・リニューアル・増築・新築等工事の請負 <br>
+              ◆建物の改修・リニューアル・増築・新築等に関するコンサルティング・企画・設計・監理の受託 <br>
+              ◆建物の各種診断・調査 <br>
+              ◆建物維持に関するマネジメント、設備機器の運転保守、警備業務をの他管理業務の受託
+            </td>
+          </tr>
+          <tr>
+            <td>勤務地</td>
+            <td>東京都</td>
+          </tr>
+          <tr>
+            <td>勤務時間</td>
+            <td>8時30分〜17時10分（休憩：12時〜13時）　7時間40分勤務　※残業あり 休日出勤あり 深夜業あり</td>
+          </tr>
+          <tr>
+            <td>給与</td>
+            <td>月給制</td>
+          </tr>
+          <tr>
+            <td>基本給</td>
+            <td>
+              大学院卒　200,000円 <br>
+              大学卒　195,000円 <br>
+              短大・専門学校卒　185,000円
+            </td>
+          </tr>
+          <tr>
+            <td>昇給・賞与</td>
+            <td>昇給/年1回（人事考課による本給改訂）　賞与/年間5ヶ月（初年度は2.5ヶ月）</td>
+          </tr>
+          <tr>
+            <td>諸手当</td>
+            <td>通勤手当（全額）・超勤手当・責任者手当・住宅手当（支給条件あり）　他</td>
+          </tr>
+          <tr>
+            <td>休日・休暇</td>
+            <td>土・日（完全週給2日制）・祝日・夏季・年末年始・慶弔・年次有給休暇</td>
+          </tr>
+          <tr>
+            <td>社会保険</td>
+            <td>雇用・労災・健康・厚生年金</td>
+          </tr>
+          <tr>
+            <td>採用予定数</td>
+            <td>若干名</td>
+          </tr>
+          <tr>
+            <td>提出書類</td>
+            <td>
+              経験者の方/履歴書（写真貼付）、職務経歴書 <br>
+              新卒の方/履歴書（写真貼付）、卒業見込み証明書・成績証明書・健康診断書
+            </td>
+          </tr>
+          <tr>
+            <td>採用方法</td>
+            <td>適性検査・作文・面接　※人物重視</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <footer class="container footer_border">
+    <p class="footer_text " id="privacy_policy">プライバシーポリシー</p>
+    <p class="footer_text">Copyright©SANGU inc. ALL Rights Reserved.</p>
+  </footer>
+</body>
+</html>

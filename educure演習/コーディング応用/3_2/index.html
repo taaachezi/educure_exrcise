@@ -6,26 +6,74 @@
   <meta name="keywords" content="ビル管理会社,マンション管理,運営,施設マネジメント,公共施設管理,総合不動産管理会社,清掃業務,保安警備業務,株式会社サングーSANGU">
   <title>株式会社サングーSANGUマンション管理やビル管理、公共施設運営などをトータルサポート</title>
   <link rel="stylesheet" type="text/css" href="base.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script>
+  	$(function(){
+  		// カレント表示　パスとlist_contentsクラスのidが一致したらcssを付与する
+  		var path = location.pathname.split("/");
+  		var currentUrl = path[path.length-1].split(".")[0];
+  		var listId = []
+  		listId.push("privacy_policy");
+  		$(".list_contents").each(function(){
+  			listId.push($(this).attr("id"));
+  		});
+  		$(listId).each(function(){
+  			if(this　== currentUrl) {
+  				var result = this;
+  				$("#" + result).css("color", "#237abd");
+  				$(".list_space").css("color", "#000");
+  			};
+  		});
+
+  		// ページ遷移
+  		$("#header_log").on("click", function(){
+  			location.href = "index.html";
+  		})
+  		$("#company, #company_logo").on("click", function(){
+  			location.href = "company.html";
+  		});
+  		$("#service").on("click", function(){
+  			location.href = "service.html";
+  		});
+  		$("#recruit, #recruit_logo").on("click", function(){
+  			location.href = "recruit.html";
+  		});
+  		$("#privacy_policy").on("click", function(){
+  			location.href = "privacy_policy.html";
+  		});
+  		$("li, #privacy_policy, .recruit_box, #more_message").on("mouseover", function(){
+  			$(this).css("cursor", "pointer");
+  		});
+
+  		// スクロール
+  		$("#more_message").on("click", function(){
+  			var main_content = $("#main_content").offset().top;
+  			$("html").animate({scrollTop:main_content}, 1000, "swing");
+  		});
+  	});
+  </script>
 </head>
+
 <body>
-	<div class="main_image">
-		<header class="header_container clearfix">
-			<span class="header_contact_message clearfix">お問い合わせはこちら</span>
+	<div class="top_content">
+		<header class="header_container clearfix" id="header">
+			<span class="header_contact_message clearfix">お電話でのお問い合わせはこちら</span>
 			<nav>
 				<ul class="header_logo">
-					<li class="list_logo"><a href="" title=""><img src="images/base/logo.png"></a></li>
+					<li class="list_logo" id="header_log"><img src="images/base/logo.png"></li>
 				</ul>
 				<ul class="header_bar">
-					<li class="list_contents">会社概要<span class="list_space">|</span></li>
-					<li class="list_contents">事業紹介<span class="list_space">|</span></li>
-					<li class="list_contents">採用情報<span class="list_space">|</span></li>
+					<li class="list_contents" id="company"><span class="list_space">|</span>会社概要<span class="list_space">|</span></li>
+					<li class="list_contents" id="service">事業紹介<span class="list_space">|</span></li>
+					<li class="list_contents" id="recruit">採用情報<span class="list_space">|</span></li>
 					<li class="list_contents">TEL<span class="tel_number">03-3493-1551</span></li>
 				</ul>
 			</nav>
 		</header>
+
 		<div class="container clearfix">
 			<img src="images/index/main_text.png" class="main_text_image">
-			<a href="#main_content"><p class="more_message">More Message</p></a>
+			<p class="more_message" id="more_message">More Message</p>
 		</div>
 	</div>
 
@@ -108,11 +156,11 @@
 			<h2 class="contents_title">RECRUIT</h2>
 			<img src="images/base/index_bg.png" class="contents_title_bg">
 			<div class="content_wrapper clearfix">
-				<div class="recruit_box">
+				<div class="recruit_box" id="recruit_logo">
 					<img src="images/index/recruit_text.png" class="content_box_img">
 					<p>人間として大きく成長したい皆様から <br>のご応募をお待ちしております。</p>
 				</div>
-				<div class="recruit_box">
+				<div class="recruit_box" id="company_logo">
 					<img src="images/index/company_text.png" class="content_box_img">
 					<p>建物管理も人と環境への配慮が <br>求められる時代です</p>
 				</div>
@@ -120,10 +168,9 @@
 		</div>
 	</div>
 
-	<footer class="container">
-		<p class="footer_text">プライバシーポリシー</p>
+	<footer class="container footer_border">
+		<p class="footer_text " id="privacy_policy">プライバシーポリシー</p>
 		<p class="footer_text">Copyright©SANGU inc. ALL Rights Reserved.</p>
 	</footer>
-
 </body>
 </html>

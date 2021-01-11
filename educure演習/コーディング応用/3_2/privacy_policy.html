@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="株式会社サングーのオフィシャルサイトです。マンション管理運営、ビル・施設マネジメント、公共施設管理運営などをトータルサポートいたします。">
+  <meta name="keywords" content="ビル管理会社,マンション管理,運営,施設マネジメント,公共施設管理,総合不動産管理会社,清掃業務,保安警備業務,株式会社サングーSANGU">
+  <title>会社概要｜株式会社サングーSANGUマンション管理やビル管理、公共施設運営などをトータルサポート</title>
+  <link rel="stylesheet" type="text/css" href="base.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+   <script>
+  	$(function(){
+  		// カレント表示　パスとlist_contentsクラスのidが一致したらcssを付与する
+  		var path = location.pathname.split("/");
+  		var currentUrl = path[path.length-1].split(".")[0];
+  		var listId = []
+      listId.push("privacy_policy");
+  		$(".list_contents").each(function(){
+  			listId.push($(this).attr("id"));
+  		});
+  		$(listId).each(function(){
+  			if(this　== currentUrl) {
+  				var result = this;
+  				$("#" + result).css("color", "#237abd");
+          $(".list_space").css("color", "#000");
+  			};
+  		});
+
+  		// ページ遷移
+  		$("#header_log").on("click", function(){
+  			location.href = "index.html";
+  		})
+  		$("#company").on("click", function(){
+  			location.href = "company.html";
+  		});
+  		$("#service").on("click", function(){
+  			location.href = "service.html";
+  		});
+  		$("#recruit").on("click", function(){
+  			location.href = "recruit.html";
+  		});
+  		$("#privacy_policy").on("click", function(){
+  			location.href = "privacy_policy.html";
+  		});
+  		$("li, #privacy_policy").on("mouseover", function(){
+  			$(this).css("cursor", "pointer");
+  		});
+  	});
+  </script>
+</head>
+
+<body>
+	<header class="company_header_container clearfix">
+		<span class="header_contact_message clearfix">お電話でのお問い合わせはこちら</span>
+		<nav>
+			<ul class="header_logo">
+				<li class="list_logo" id="header_log"><img src="images/base/logo.png"></li>
+			</ul>
+			<ul class="header_bar">
+				<li class="list_contents" id="company"><span class="list_space">|</span>会社概要<span class="list_space">|</span></li>
+				<li class="list_contents" id="service">事業紹介<span class="list_space">|</span></li>
+				<li class="list_contents" id="recruit">採用情報<span class="list_space">|</span></li>
+				<li class="list_contents">TEL<span class="tel_number">03-3493-1551</span></li>
+			</ul>
+		</nav>
+	</header>
+
+  <div class="privacy_policy">
+    <div class="container">
+      <h2 class="contents_title">PRIVACY POLICY</h2>
+      <img src="images/base/index_bg.png" class="contents_title_bg">
+    </div>
+    <div class="container">
+      <h3 class="privacy_title">基本方針</h3>
+      <p class="privacy_text">SANGU（以下「当社」といいます）は、当社従業者が保有するお客様並びに当社従業者の個人情報を保護することは、重大な社会的責任と認識し、以下のとおり個人情報保護方針を定め、これを実行し維持することを宣言いたします。</p>
+
+      <h3 class="privacy_title">個人情報の管理</h3>
+      <p class="privacy_text">当社は、お客さまの個人情報を正確かつ最新の状態に保ち、個人情報への不正アクセス・紛失・破損・改ざん・漏洩などを防止するため、セキュリティシステムの維持・管理体制の整備・社員教育の徹底等の必要な措置を講じ、安全対策を実施し個人情報の厳重な管理を行ないます。</p>
+
+      <h3 class="privacy_title">個人情報の利用目的</h3>
+      <p class="privacy_text">お客さまからお預かりした個人情報は、当社からご連絡や業務のご案内やご質問に対する回答として、電子メールや資料のご送付に利用いたします。</p>
+
+      <h3 class="privacy_title">個人情報の第三者への開示・提供の禁止</h3>
+      <p class="privacy_text">
+        当社は、お客さまよりお預かりした個人情報を適切に管理し、次のいずれかに該当する場合を除き、個人情報を第三者に開示いたしません。 <br>
+        1.お客さまの同意がある場合 <br>
+        2.お客さまが希望されるサービスを行なうために当社が業務を委託する業者に対して開示する場合 <br>
+        3.法令に基づき開示することが必要である場合
+      </p>
+
+      <h3 class="privacy_title">個人情報の安全対策</h3>
+      <p class="privacy_text">当社は、個人情報に正確性及び安全確保のために、セキュリティに万全の対策を講じています。</p>
+
+      <h3 class="privacy_title">ご本人の照会</h3>
+      <p class="privacy_text">お客さまがご本人の個人情報の照会・修正・削除などをご希望される場合は、ご本人であることを確認の上、対応させていただきます。</p>
+
+      <h3 class="privacy_title">法令、規範の遵守と見直し</h3>
+      <p class="privacy_text">当社は、保有する個人情報に関して適応される日本の法令、その他規範を遵守するとともに、本ポリシーの内容を適宜見直し、その改善に努めます。</p>
+
+      <h3 class="privacy_title">お問い合わせ</h3>
+      <p class="privacy_text">
+        当社の個人情報の取扱に関するお問い合わせは下記までご連絡ください。<br>
+        株式会社　サングー <br>
+        〒141-0031 <br>
+        東京都品川区西五反田1丁目29番2号（吾作ビル6F） <br>
+        TEL.03-3493-1551 <br>
+        FAX.03-3493-1555
+      </p>
+    </div>
+  </div>
+
+  <footer class="container footer_border">
+    <p class="footer_text" id="privacy_policy">プライバシーポリシー</p>
+    <p class="footer_text">Copyright©SANGU inc. ALL Rights Reserved.</p>
+  </footer>
+</body>
+</html>

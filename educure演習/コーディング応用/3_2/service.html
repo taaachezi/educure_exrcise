@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="株式会社サングーのオフィシャルサイトです。マンション管理運営、ビル・施設マネジメント、公共施設管理運営などをトータルサポートいたします。">
+  <meta name="keywords" content="ビル管理会社,マンション管理,運営,施設マネジメント,公共施設管理,総合不動産管理会社,清掃業務,保安警備業務,株式会社サングーSANGU">
+  <title>会社概要｜株式会社サングーSANGUマンション管理やビル管理、公共施設運営などをトータルサポート</title>
+  <link rel="stylesheet" type="text/css" href="base.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+   <script>
+  	$(function(){
+  		// カレント表示　パスとlist_contentsクラスのidが一致したらcssを付与する
+  		var path = location.pathname.split("/");
+  		var currentUrl = path[path.length-1].split(".")[0];
+  		var listId = []
+  		listId.push("privacy_policy");
+  		$(".list_contents").each(function(){
+  			listId.push($(this).attr("id"));
+  		});
+  		$(listId).each(function(){
+  			if(this　== currentUrl) {
+  				var result = this;
+  				$("#" + result).css("color", "#237abd");
+          $(".list_space").css("color", "#000");
+  			};
+  		});
+
+  		// ページ遷移
+  		$("#header_log").on("click", function(){
+  			location.href = "index.html";
+  		})
+  		$("#company").on("click", function(){
+  			location.href = "company.html";
+  		});
+  		$("#service").on("click", function(){
+  			location.href = "service.html";
+  		});
+  		$("#recruit").on("click", function(){
+  			location.href = "recruit.html";
+  		});
+  		$("#privacy_policy").on("click", function(){
+  			location.href = "privacy_policy.html";
+  		});
+  		$("li, #privacy_policy").on("mouseover", function(){
+  			$(this).css("cursor", "pointer");
+  		});
+  	});
+  </script>
+</head>
+
+<body>
+	<header class="company_header_container clearfix">
+		<span class="header_contact_message clearfix">お電話でのお問い合わせはこちら</span>
+		<nav>
+			<ul class="header_logo">
+				<li class="list_logo" id="header_log"><img src="images/base/logo.png"></li>
+			</ul>
+			<ul class="header_bar">
+				<li class="list_contents" id="company"><span class="list_space">|</span>会社概要<span class="list_space">|</span></li>
+				<li class="list_contents" id="service">事業紹介<span class="list_space">|</span></li>
+				<li class="list_contents" id="recruit">採用情報<span class="list_space">|</span></li>
+				<li class="list_contents">TEL<span class="tel_number">03-3493-1551</span></li>
+			</ul>
+		</nav>
+	</header>
+
+  <div class="container">
+      <h2 class="contents_title">SERVICE</h2>
+      <img src="images/base/index_bg.png" class="contents_title_bg">
+  </div>
+  <div class="container">
+    <img src="images/service/service_text.png" class="content_box_img">
+  </div>
+
+  <div class="container clearfix service_container">
+    <img src="images/service/service1.png" class="service_contents_logo">
+    <img src="images/service/service_bg1.png" class="service_contents_bg machine"alt="">
+    <img src="images/service/service_text1.png" alt="">
+    <p class="service_text">豊富な経験と専門知識で様々なタイプの設備や機器の保守・点検に対応します。</p>
+    <p class="service_list">
+      <span class="service_text_list">&#9679;</span>電気工作物の保守　
+      <span class="service_text_list">&#9679;</span>空調機の保守　
+      <span class="service_text_list">&#9679;</span>冷暖房機器の保守　
+      <span class="service_text_list">&#9679;</span>設備運転・点検
+    </p>
+  </div>
+
+  <div class="container clearfix service_container">
+    <img src="images/service/service2.png" class="service_contents_logo">
+    <img src="images/service/service_bg2.png" class="service_contents_bg clean"alt="">
+    <img src="images/service/service_text2.png" alt="">
+    <p class="service_text">入居者や来館者のめに直接ふれる業務ですのでスタッフの教育指導・作業時の監督・安全への配慮をとくに徹底しています。</p>
+    <p class="service_list">
+      <span class="service_text_list">&#9679;</span>日常清掃　
+      <span class="service_text_list">&#9679;</span>定期清掃（床面・ガラス・外壁等）　
+      <span class="service_text_list">&#9679;</span>特別清掃（蛍光灯・サッシ・ブラインド等）　
+    </p>
+  </div>
+
+  <div class="container clearfix service_container">
+    <img src="images/service/service3.png" class="service_contents_logo">
+    <img src="images/service/service_bg3.png" class="service_contents_bg health"alt="">
+    <img src="images/service/service_text3.png" alt="">
+    <p class="service_text">空気と水と環境の調和を第一に考え、法律を遵守した形で業務を遂行します。</p>
+    <p class="service_list">
+      <span class="service_text_list">&#9679;</span>給水設備管理　
+      <span class="service_text_list">&#9679;</span>排水・汚水槽清掃　
+      <span class="service_text_list">&#9679;</span>貯水槽清掃（受水槽・高架水槽）　
+      <span class="service_text_list">&#9679;</span>空気環境測定 <br>
+      <span class="service_text_list">&#9679;</span>害虫駆除　
+      <span class="service_text_list">&#9679;</span>残留塩素測定　
+      <span class="service_text_list">&#9679;</span>水質検査（全般）
+    </p>
+  </div>
+
+  <div class="container clearfix service_container">
+    <img src="images/service/service4.png" class="service_contents_logo">
+    <img src="images/service/service_bg4.png" class="service_contents_bg electrical"alt="">
+    <img src="images/service/service_text4.png" alt="">
+    <p class="service_text">電気工事士の資格を持つ専門スタッフが多数在籍。電気のことなら何でもお任せください。</p>
+    <p class="service_list">
+      <span class="service_text_list">&#9679;</span>コンセントや照明器具の増設　
+      <span class="service_text_list">&#9679;</span>受変電設備に関する電気工　
+      <span class="service_text_list">&#9679;</span>移設に伴う配線工事　<br>
+      <span class="service_text_list">&#9679;</span>自家用電気工作物の法定点検業務
+    </p>
+  </div>
+
+  <div class="container clearfix service_container">
+    <img src="images/service/service5.png" class="service_contents_logo">
+    <img src="images/service/service_bg5.png" class="service_contents_bg etc"alt="">
+    <img src="images/service/service_text5.png" alt="">
+    <p class="service_text">この他にも、建物環境向上のために幅広い業務をご用意しています。まずはご相談ください。</p>
+    <p class="service_list">
+      <span class="service_text_list">&#9679;</span>植栽の剪定・保守・リース業務　
+      <span class="service_text_list">&#9679;</span>リフォーム業務　
+      <span class="service_text_list">&#9679;</span>その他　
+    </p>
+  </div>
+
+  <footer class="container footer_border">
+    <p class="footer_text " id="privacy_policy">プライバシーポリシー</p>
+    <p class="footer_text">Copyright©SANGU inc. ALL Rights Reserved.</p>
+  </footer>
+</body>
+</html>
